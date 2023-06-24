@@ -19,6 +19,7 @@ export const fetchTimeSeries = async (
         outputsize: 'full',
       },
     })
+    console.log(response.data)
     return response.data
   } catch (error) {
     console.error('Error fetching data from Alpha Vantage', error)
